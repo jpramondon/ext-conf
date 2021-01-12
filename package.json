@@ -1,0 +1,45 @@
+{
+  "name": "@gearedminds/ext-conf",
+  "version": "3.0.0",
+  "description": "An nconf-based module that manage external configuration files hierarchically",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "npm run clean && tsc && echo 'done'",
+    "test": "mocha --reporter spec --compilers ts:ts-node/register test/*.test.ts",
+    "clean": "rimraf dist",
+    "echo-version": "echo $npm_package_version"
+  },
+  "keywords": [
+    "nconf",
+    "configuration",
+    "externalized",
+    "hierarchy"
+  ],
+  "author": "Jerome Pramondon",
+  "license": "WTFPL",
+  "dependencies": {
+    "tslib": "1.7.1",
+    "nconf": "0.8.4",
+    "winston": "2.3.1"
+  },
+  "devDependencies": {
+    "typescript": "3.6.2",
+    "rimraf": "3.0.0",
+    "mocha": "4.0.1",
+    "@types/mocha": "2.2.44",
+    "@types/node": "6.0.46",
+    "sinon": "4.1.2",
+    "@types/sinon": "4.0.0",
+    "chai": "4.1.2",
+    "@types/chai": "4.0.5",
+    "mock-fs": "4.4.2",
+    "@types/mock-fs": "3.6.30",
+    "ts-node": "3.3.0",
+    "tslint": "5.7.0",
+    "@types/nconf": "0.0.37"
+  }
+}
